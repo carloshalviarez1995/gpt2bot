@@ -1,5 +1,5 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, filters, PicklePersistence
-from telegram import Chat
+from telegram import ChatAction
 from functools import wraps
 from urllib.parse import urlencode
 import requests
@@ -88,7 +88,7 @@ def send_action(action):
     return decorator
 
 
-send_typing_action = send_action(Chat.TYPING)
+send_typing_action = send_action(ChatAction.TYPING)
 
 
 @send_typing_action
