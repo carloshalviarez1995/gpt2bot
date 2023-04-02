@@ -88,7 +88,7 @@ def send_action(action):
     return decorator
 
 
-send_typing_action = send_action(ChatAction.TYPING)
+send_typing_action = send_action(Chat.TYPING)
 
 
 @send_typing_action
