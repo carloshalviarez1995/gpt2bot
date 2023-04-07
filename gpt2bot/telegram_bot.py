@@ -103,6 +103,9 @@ def message(self, update, context):
     turns = context.chat_data['turns']
 
     user_message = update.message.text
+    print(user_message)############################################################################################################
+    print(turns) ############################################################################################################
+    
     return_gif = False
     if '@gif' in user_message:
         # Return gif
